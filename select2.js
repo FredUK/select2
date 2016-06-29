@@ -1140,7 +1140,10 @@ the specific language governing permissions and limitations under the Apache Lic
 
                         // bulk append the created nodes
                         container.append(nodes);
-                        liveRegion.text(opts.formatMatches(results.length));
+
+                        if (liveRegion) {
+                          liveRegion.text(opts.formatMatches(results.length));
+                        }
                     };
 
                     populate(results, container, 0);
