@@ -1,7 +1,7 @@
 /*
 Copyright 2012 Igor Vaynberg
 
-Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
+Version: 3.5.6 Timestamp: Tue Jul 5 19:44:32 EDT 2016
 
 This software is licensed under the Apache License, Version 2.0 (the "Apache License") or the GNU
 General Public License version 2 (the "GPL License"). You may choose either license to govern your
