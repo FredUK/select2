@@ -1887,6 +1887,7 @@ the specific language governing permissions and limitations under the Apache Lic
             }
 
             function postRender() {
+                if(!self.container) return false;
                 search.removeClass("select2-active");
                 self.positionDropdown();
                 if (results.find('.select2-no-results,.select2-selection-limit,.select2-searching').length) {
