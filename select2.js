@@ -3332,6 +3332,7 @@ the specific language governing permissions and limitations under the Apache Lic
 
         // multi
         postprocessResults: function (data, initial, noHighlightUpdate) {
+            if (!this.results) return;
             var val = this.getVal(),
                 choices = this.results.find(".select2-result"),
                 compound = this.results.find(".select2-result-with-children"),
