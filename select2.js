@@ -1864,7 +1864,7 @@ the specific language governing permissions and limitations under the Apache Lic
          * @param initial whether or not this is the call to this method right after the dropdown has been opened
          */
         // abstract
-        updateResults: function (initial) {
+        updateResults: function (initial, hasSelected) {
             var search = this.search,
                 results = this.results,
                 opts = this.opts,
@@ -1945,6 +1945,11 @@ the specific language governing permissions and limitations under the Apache Lic
             input = this.tokenize();
             if (input != undefined && input != null) {
                 search.val(input);
+            }
+
+            // If we want the dropdown to be kept open after selection then don't reset resultsPage and don't make new query
+            if (hasSelected && !this.opts.closeOnSelect) {
+                return;
             }
 
             this.resultsPage = 1;
@@ -3188,7 +3193,7 @@ the specific language governing permissions and limitations under the Apache Lic
             this.lastSearchTerm = this.search.val();
 
             this.clearSearch();
-            this.updateResults();
+            this.updateResults(false, true);
 
             if (this.select || !this.opts.closeOnSelect) this.postprocessResults(data, false, this.opts.closeOnSelect===true);
 
