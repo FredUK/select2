@@ -2293,7 +2293,7 @@ the specific language governing permissions and limitations under the Apache Lic
             this.opts.element.on('focus.select2', this.bind(function () { this.focus(); }));
 
             this.focusser.prev()
-                .text(elementLabel.text())
+                .text(elementLabel.text() || 'Selector')
                 .attr('for', this.focusser.attr('id'));
 
             // Ensure the original element retains an accessible name
