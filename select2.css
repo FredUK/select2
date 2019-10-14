@@ -51,6 +51,9 @@ Version: @@ver@@ Timestamp: @@timestamp@@
     background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 50%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee', GradientType = 0);
     background-image: linear-gradient(to top, #eee 0%, #fff 50%);
+    
+    width: 100%;
+    text-align: left;
 }
 
 html[dir="rtl"] .select2-container .select2-choice {
