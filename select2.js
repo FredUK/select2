@@ -2792,7 +2792,7 @@ the specific language governing permissions and limitations under the Apache Lic
             }).html([
                 "<ul class='select2-choices'>",
                 "  <li class='select2-search-field'>",
-                "    <label for='' class='select2-offscreen'></label>",
+                "    <label for='' class='select2-offscreen'>Select</label>",
                 "    <input type='text' autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' class='select2-input'>",
                 "  </li>",
                 "</ul>",
@@ -2909,7 +2909,7 @@ the specific language governing permissions and limitations under the Apache Lic
             this.search.attr("id", "s2id_autogen"+nextUid());
   
             this.search.prev()
-                .text($("label[for='" + this.opts.element.attr("id") + "']").text())
+                .text($("label[for='" + this.opts.element.attr("id") + "']").text() || "Selector")
                 .attr('for', this.search.attr('id'));
             this.opts.element.on('focus.select2', this.bind(function () { this.focus(); }));
   
