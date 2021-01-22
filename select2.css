@@ -51,7 +51,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
     background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 50%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee', GradientType = 0);
     background-image: linear-gradient(to top, #eee 0%, #fff 50%);
-    
+
     width: 100%;
     text-align: left;
 }
@@ -593,6 +593,8 @@ html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice
 
 .select2-search-choice-close {
     display: block;
+    border: none;
+    background-color: transparent;
     width: 12px;
     height: 13px;
     position: absolute;
